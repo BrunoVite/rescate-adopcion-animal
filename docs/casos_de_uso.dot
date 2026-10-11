@@ -1,0 +1,11 @@
+digraph CasosDeUso {
+rankdir=LR;
+Reportante -> "Reportar rescate";
+Reportante -> "Consultar estado del caso";
+Voluntario -> "Recibir notificacion de nuevo rescate";
+Voluntario -> "Actualizar estado del caso";
+Voluntario -> "Registrar y categorizar animal";
+Administrador -> "Asignar voluntario o veterinario";
+Administrador -> "Gestionar adopcion";
+Administrador -> "Administrar usuarios y reportes";
+}
