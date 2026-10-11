@@ -1,0 +1,12 @@
+digraph Clases {
+Expediente [label="Expediente (abstracta)|estado|cambiarEstado(), obtenerProtocolo()"];
+ExpedientePerro -> Expediente;
+ExpedienteGato -> Expediente;
+ExpedienteFauna -> Expediente;
+ExpedienteFactory -> Expediente [label="crea"];
+GestorCasos -> Expediente [label="gestiona"];
+GestorCasos -> Observador [label="notifica"];
+Personal -> Observador;
+CasoController -> GestorCasos;
+CasoController -> CasoView;
+}
