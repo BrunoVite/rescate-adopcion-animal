@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Listado de casos de rescate registrados.">
+  <title>Rescates registrados | Huellas de Esperanza</title>
+</head>
+<body>
+  <header>
+    <img src="assets/img/logo.svg" alt="Logo de Huellas de Esperanza" width="64" height="64">
+    <h1>Huellas de Esperanza</h1>
+    <p>Sistema de Control de Rescate y Adopción Animal</p>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="reportar.html">Reportar rescate</a></li>
+        <li><a href="rescates.html" aria-current="page">Rescates registrados</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="listado">
+      <h2 id="listado">Casos de rescate registrados</h2>
+      <p>Listado de los animales reportados, organizado por código de caso.</p>
+
+      <table>
+        <caption>Casos registrados en el sistema</caption>
+        <thead>
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Caso</th>
+            <th scope="col">Categoría</th>
+            <th scope="col">Urgencia</th>
+            <th scope="col">Estado del hallazgo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">R-001</th><td>Perrito de la calle Bolívar</td><td>Perros</td><td>Alta</td><td>Herida en una pata trasera y desnutrición.</td></tr>
+          <tr><th scope="row">R-002</th><td>Gatita del mercado</td><td>Gatos</td><td>Media</td><td>Deshidratada, sin heridas visibles.</td></tr>
+          <tr><th scope="row">R-003</th><td>Ave playera herida</td><td>Fauna Silvestre</td><td>Alta</td><td>Ala fracturada encontrada en la playa.</td></tr>
+          <tr><th scope="row">R-004</th><td>Cachorro de la vía a Chamanga</td><td>Perros</td><td>Baja</td><td>Sano, abandonado en la carretera.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="resumen-cat">
+      <h2 id="resumen-cat">Casos por categoría</h2>
+      <article>
+        <h3>Perros</h3>
+        <ul><li>R-001 &ndash; Perrito de la calle Bolívar</li><li>R-004 &ndash; Cachorro de la vía a Chamanga</li></ul>
+      </article>
+      <article>
+        <h3>Gatos</h3>
+        <ul><li>R-002 &ndash; Gatita del mercado</li></ul>
+      </article>
+      <article>
+        <h3>Fauna Silvestre</h3>
+        <ul><li>R-003 &ndash; Ave playera herida</li></ul>
+      </article>
+      <p><a href="reportar.html">Reportar un nuevo caso</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Huellas de Esperanza &ndash; Universidad Técnica de Manabí, Tecnologías de la Información en Línea.</p>
+    <address>
+      Contacto: <a href="mailto:contacto@huellasdeesperanza.example">contacto@huellasdeesperanza.example</a><br>
+      Cojimíes, Pedernales, Manabí, Ecuador
+    </address>
+    <p>Autor: Bruno Duvan Vite Santos &ndash; Paralelo A</p>
+  </footer>
+</body>
+</html>
