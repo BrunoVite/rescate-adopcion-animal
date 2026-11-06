@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario para reportar un nuevo animal rescatado.">
+  <title>Reportar rescate | Huellas de Esperanza</title>
+</head>
+<body>
+  <header>
+    <img src="assets/img/logo.svg" alt="Logo de Huellas de Esperanza" width="64" height="64">
+    <h1>Huellas de Esperanza</h1>
+    <p>Sistema de Control de Rescate y Adopción Animal</p>
+    <nav aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="reportar.html" aria-current="page">Reportar rescate</a></li>
+        <li><a href="rescates.html">Rescates registrados</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="titulo-form">
+      <h2 id="titulo-form">Reportar un animal rescatado</h2>
+      <p>Complete el formulario con los datos del caso. Los campos marcados con * son obligatorios.</p>
+
+      <form action="rescates.html" method="get">
+        <fieldset>
+          <legend>Datos del caso</legend>
+
+          <p>
+            <label for="titulo">Título del caso o nombre provisional *</label><br>
+            <input type="text" id="titulo" name="titulo" required minlength="3" maxlength="60" placeholder="Ej.: Perrito de la calle Bolívar">
+          </p>
+
+          <p>
+            <label for="categoria">Categoría *</label><br>
+            <select id="categoria" name="categoria" required>
+              <option value="">-- Seleccione una categoría --</option>
+              <option value="perros">Perros</option>
+              <option value="gatos">Gatos</option>
+              <option value="fauna-silvestre">Fauna Silvestre</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Nivel de urgencia médica *</legend>
+          <p>
+            <input type="radio" id="urgencia-alta" name="urgencia" value="alta" required>
+            <label for="urgencia-alta">Alta</label>
+          </p>
+          <p>
+            <input type="radio" id="urgencia-media" name="urgencia" value="media">
+            <label for="urgencia-media">Media</label>
+          </p>
+          <p>
+            <input type="radio" id="urgencia-baja" name="urgencia" value="baja">
+            <label for="urgencia-baja">Baja</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Estado del animal</legend>
+          <p>
+            <label for="descripcion">Descripción detallada del estado en que se encontró *</label><br>
+            <textarea id="descripcion" name="descripcion" rows="6" cols="50" required minlength="10" maxlength="500" placeholder="Describa heridas, comportamiento, lugar del hallazgo, etc."></textarea>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Registrar rescate</button>
+          <button type="reset">Limpiar formulario</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Huellas de Esperanza &ndash; Universidad Técnica de Manabí, Tecnologías de la Información en Línea.</p>
+    <address>
+      Contacto: <a href="mailto:contacto@huellasdeesperanza.example">contacto@huellasdeesperanza.example</a><br>
+      Cojimíes, Pedernales, Manabí, Ecuador
+    </address>
+    <p>Autor: Bruno Duvan Vite Santos &ndash; Paralelo A</p>
+  </footer>
+</body>
+</html>
